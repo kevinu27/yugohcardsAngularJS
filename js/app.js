@@ -1,6 +1,6 @@
 var app = angular.module('yugiohApp', ['ngRoute']) // yugioh es el nombre del proyecto
 
-app.controller('yugiohCardsCrtl', ['$scope', '$http', function($scope, $http){
+app.controller('yugiohCardsCrtl', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope){
 
     this.cards = cards
     $scope.cards = cards
@@ -74,7 +74,7 @@ app.controller('yugiohCardsCrtl', ['$scope', '$http', function($scope, $http){
         });
           console.log('-----', $scope.jsonCardsArrayToIterate)
         $scope.cardsData = $scope.jsonCardsArrayToIterate
-
+        $rootScope.cardsData = $scope.jsonCardsArrayToIterate
 
     })
 

@@ -1,5 +1,9 @@
-app.controller('cardCtrl', ['$scope', function($scope){
+app.controller('cardCtrl', ['$scope', '$routeParams', '$rootScope', function($scope, $routeParams, $rootScope){
     console.log(' se ha cargado el card controller')
-    $scope.mensaje = "hello"
+    $scope.id = $routeParams.id;
+    console.log('rootScope', $rootScope.cardsData)
+    // console.log('$scope.jsonCardsArrayToIterate', $parent.jsonCardsArrayToIterate)
+    // $scope.CardToShow = $parent.jsonCardsArrayToIterate
+
 
 }])
