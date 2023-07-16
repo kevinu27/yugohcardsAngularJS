@@ -14,6 +14,7 @@
     <script src="js/config.js"></script>
     <!-- Controladores de las vistas -->
     <script src="js/arenaCtrl.js"></script>
+    <script src="js/cardCtrl.js"></script>
 
 </head>
 
@@ -21,57 +22,3 @@
   
     <div ng-include="'parciales/navbar.html'"></div>
     <div ng-view></div>
-        <!-- <div class="container" ng-controller="yugiohCardsCrtl as cards">
-
-          <button class="btn btn-primary boton-cards" ng-click="mostrarNombreCard()" >show cards</button>
-          <button class="btn btn-primary boton-cards" ng-click="barajarNombreCard()" >suffle cards</button>
-
-          <input type="range" id="volume" name="volume"
-          min="0" max="5000" ng-model="sliderValue" ng-change="sliderChanged(sliderValue)">
-          <label for="volume"> {{sliderValue}}</label>
-
-          <ul ng-show="mostrarCartas">
-            <li class="list">
-              <div class="image-container flex-container">
-                <div ng-repeat="image in jsonCardsArrayToIterate" ng-show="{{image.atk > 100}}">
-                  <img ng-src="{{image.card_images[0].image_url}}" alt="card" class="image" />
-                </div>
-              </div>
-            </li>
-          </ul>
-      </div>
-
-</body>
-
-</html>
-
-<style>
-    /* .fast{
-        -webkit-animation-duration:4s;
-        animation-duration: 4s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    } */
-    .image {
-    width: 250px;
-    height: fit-content;
-    margin: 20px;
-  }
-
-  .image-container.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .image-container.flex-container img {
-    box-sizing: border-box;
-    padding: 5px;
-  }
-
-  .boton-cards{
-    margin-top: 2rem;
-  }
-    .list{
-        list-style: none;
-    }
-</style> -->

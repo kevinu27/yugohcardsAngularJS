@@ -6,9 +6,10 @@ app.config( function($routeProvider){
     }).when('/arena', {
         templateUrl: 'parciales/arena.html',
         controller: 'arenaCtrl'
-    }).when('/card', {
-        templateUrl: 'parciales/card.html'
+    }).when('/card/:id', {
+        templateUrl: 'parciales/card.html',
+        controller: 'cardCtrl'
     }).otherwise({
         redirectTo: '/'
     })
-})
+});
