@@ -14,7 +14,8 @@
       <li class="list">
         <div class="image-container flex-container">
           <div ng-repeat="image in jsonCardsArrayToIterate" ng-show="{{image.atk > 100}}">
-            <img ng-src="{{image.card_images[0].image_url}}" alt="card" class="image" />
+            <a href="#!/card"> <img ng-src="{{image.card_images[0].image_url}}" alt="card" class="image" /> </a>
+            
           </div>
         </div>
       </li>
